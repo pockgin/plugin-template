@@ -25,12 +25,12 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: "20"
+          node-version: "22"
 
       - name: Install Pockgin CLI
         run: |
           git clone https://github.com/pockgin/cli.git /tmp/pockgin-cli
-          cd /tmp/pockgin-cli && npm ci
+          cd /tmp/pockgin-cli && npm install
 
       - name: Validate
         run: node /tmp/pockgin-cli/bin/pockgin.js validate .
@@ -57,7 +57,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: "20"
+          node-version: "22"
 
       - name: Install dependencies
         run: npm install js-yaml
