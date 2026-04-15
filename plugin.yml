@@ -1,0 +1,7 @@
+name: ExamplePlugin
+main: Author\ExamplePlugin\Main
+version: "1.0.0"
+api:
+  - "5.0.0"
+author: YourName
+description: A PocketMine-MP plugin built with the Pockgin standard workflow.
